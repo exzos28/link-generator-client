@@ -1,0 +1,33 @@
+.root {
+    position: relative;
+}
+
+.header:global(.ant-card) {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 20px;
+    border-width: 0;
+    border-bottom-width: 1px;
+}
+
+.header:global(.ant-card-body) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 65px;
+}
+
+.header:global(.ant-row) {
+    height: 100%;
+}
+
+.content {
+    padding: 0 20px 20px;
+}
+
+.spinner {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

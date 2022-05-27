@@ -1,0 +1,38 @@
+.root {
+  position: relative;
+}
+
+.content {
+  padding: 0;
+}
+
+.main {
+  min-height: 360px;
+}
+
+.baseHeader {
+  min-height: 64px;
+  max-height: 64px;
+}
+
+.mockHeader {
+
+}
+
+.realHeader {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 200px);
+  right: 0;
+  transition: width 0.2s;
+  z-index: 100;
+}
+
+.realHeader:global(.ant-layout-header) {
+  padding: 0;
+}
+
+.collapsedHeader {
+  width: calc(100% - 48px);
+  transition: width 0.2s;
+}
